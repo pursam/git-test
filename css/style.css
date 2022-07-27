@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+.back {
+  background-color: gray;
+  background-image: url(../image/back2.png), url(../image/back.jpg);
+  background-repeat: no-repeat, repeat;
+  background-size: 10%, auto;
+  background-position-x: 85vw, 0;
+  background-position-y: 4vh, 0;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  position: fixed;
+  z-index: -1;
+}
+.container {
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 1280px;
+  color: lavender;
+  font-size: 20px;
+  z-index: 0;
+  font-family: "Exo 2", sans-serif;
+}
+.mainheader {
+  color: black;
+  font-family: "Rubik Moonrocks", cursive;
+  font-size: 4em;
+  left: 50px;
+}
+.secondheader {
+  color: goldenrod;
+}
+.menu-list {
+  display: flex;
+  gap: 2px;
+  list-style: none;
+}
+.link {
+  padding: 0.3em;
+  margin: 2px;
+  color: peru;
+  background-color: gold;
+  border: 3px solid black;
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+}
+.link:hover {
+  background-color: white;
+  color: black;
+  border: 3px inset black;
+}
+.art-header {
+  text-decoration: none;
+  color: yellow;
+  border-bottom: 3px dotted black;
+}
+.description {
+  background-color: orange;
+  color: black;
+}
+.link-art {
+  color: black;
+}
+.link-std {
+  color: goldenrod;
+  text-decoration: none;
+}
+.link-com {
+  color: goldenrod;
+}
+.link-art:hover,
+.link-com:hover,
+.link-std:hover,
+.art-header:hover {
+  text-decoration: none;
+  color: white;
+}
+.article-block .secondheader {
+  text-align: center;
+  color: yellow;
+}
+.article::first-letter {
+  color: yellow;
+  font-family: "Rubik Moonrocks", cursive;
+  font-size: 2.5em;
+  margin: 3px;
+  float: left;
+}
+.comments-block {
+  border-left: 4px dotted black;
+  color: black;
+  padding: 15px;
+}
+.comments-block > h3,
+strong {
+  color: white;
+}
+/* Каталог */
+.category > li {
+  list-style: none;
+  font-family: "Rubik Moonrocks", cursive;
+  font-size: 1.2em;
+  position: relative;
+  padding: 0 0 0 30px;
+}
+.category > li::before {
+  content: "";
+  background-image: url(../image/catalog1.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 5px;
+  left: 3px;
+}
+.punkt > li {
+  list-style: none;
+  font-family: "Exo 2", sans-serif;
+  font-size: 0.8em;
+  position: relative;
+  padding: 0 0 0 30px;
+}
+.punkt > li::before {
+  content: "";
+  background-image: url(../image/catalog2.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 2px;
+  left: 3px;
+}
+.new::after {
+  content: "new";
+  background-color: orange;
+  font-size: 0.7em;
+  margin: 0 0 0 5px;
+}
+/*font-family: 'Rubik Moonrocks', cursive; */
+/* font-family: 'Exo 2', sans-serif; */

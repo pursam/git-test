@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homework #3</title>
+  <link rel="stylesheet" href="../css/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@900&family=Rubik+Moonrocks&display=swap"
+    rel="stylesheet">
+</head>
+
+<body class="page">
+  <!-- Общее название сайта которое преследует каждую страницу -->
+  <h1>Homework.skillup</h1>
+
+  <!-- Название страницы где находится юзер + меню навигации по сайту -->
+  <h2 class="secondheader">Контакты</h2>
+
+  <div class="menu">
+    <ul class="menu-list">
+      <li class="menu-item">
+        <a class="link" href="../index.html">Главная</a>
+      </li>
+      <li class="menu-item">
+        <a class="link" href="articles.html">Статьи</a>
+      </li>
+      <li class="menu-item">
+        <a class="link" href="catalog.html">Каталог</a>
+      </li>
+      <li class="menu-item">
+        <a class="link" href="contacts.html">Контакты</a>
+      </li>
+      <li class="menu-item">
+        <a class="link" href="gallery.html">Галлерея</a>
+      </li>
+      <li class="menu-item">
+        <a class="link" href="page-nav.html">Навигация</a>
+      </li>
+      <li class="menu-item">
+        <a class="link" href="registration.html">Регистрация</a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Основная информация о контактах -->
+  <div>
+    <h3>Адрес</h3>
+    <p>ул. Крещатик, 21, Киев, 02000</p>
+  </div>
+
+  <!-- Встроенная карта гугл -->
+  <div>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1270.3862801859843!2d30.521281268113704!3d50.44533694177748!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce569a0cf187%3A0x14a4aaeaab224170!2z0YPQuy4g0JrRgNC10YnQsNGC0LjQuiwgMjEsINCa0LjQtdCyLCAwMjAwMA!5e0!3m2!1sru!2sua!4v1657292495577!5m2!1sru!2sua"
+      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+
+  <!-- Телефонный номер -->
+  <div>
+    <h3>Наш телефон</h3>
+    <p>+380 99 123 45 67</p>
+  </div>
+
+  <!-- форма обратной связи -->
+  <div>
+    <form action="contacts.php">
+      <fieldset>
+        <legend>
+          <b>Свяжитесь с нами:</b>
+        </legend>
+        <div>
+          <label for="name">Как к вам обращаться</label>
+          <input type="text" id="name" name="name" placeholder="Как к вам обращаться">
+        </div>
+
+        <div>
+          <label for="email">Ваш email</label>
+          <input type="email" id="email" name="email" placeholder="Ваш email">
+        </div>
+
+        <div>
+          <label for="phone">Номер телефона</label>
+          <input type="tel" name="phone" id="phone" placeholder="Номер телефона">
+        </div>
+
+        <div>
+          <label for="question">Задайте нам вопрос</label>
+          <textarea name="question" id="question" cols="30" rows="10" placeholder="Ваш вопрос"></textarea>
+        </div>
+
+        <div>
+          <button type="submit">Задать вопрос</button>
+        </div>
+
+      </fieldset>
+    </form>
+  </div>
+
+  <!-- Подвал с копирайтом-->
+  <footer>
+    <p>&copy;Kozichev_Vladyslav</p>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homework #3</title>
+  <link rel="stylesheet" href="../css/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@900&family=Rubik+Moonrocks&display=swap"
+    rel="stylesheet">
+</head>
+
+<body class="page">
+  <!-- Общее название сайта которое преследует каждую страницу -->
+  <h1>Homework.skillup</h1>
+
+  <!-- Название страницы где находится юзер + меню навигации по сайту -->
+  <h2 class="secondheader">Регистрация</h2>
+
+  <div class="menu">
+    <ul class="menu-list">
+      <li class="menu-item">
+        <a class="link" href="../index.html">Главная</a>
+      </li>
+      <li class="menu-item">
+        <a class="link" href="articles.html">Статьи</a>
+      </li>
+      <li class="menu-item">
+        <a class="link" href="catalog.html">Каталог</a>
+      </li>
+      <li class="menu-item">
+        <a class="link" href="contacts.html">Контакты</a>
+      </li>
+      <li class="menu-item">
+        <a class="link" href="gallery.html">Галлерея</a>
+      </li>
+      <li class="menu-item">
+        <a class="link" href="page-nav.html">Навигация</a>
+      </li>
+      <li class="menu-item">
+        <a class="link" href="registration.html">Регистрация</a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Основная часть со всеми полями ввода -->
+  <div>
+    <form action="register.php">
+      <fieldset>
+        <legend>Форма регистрации</legend>
+
+        <div>
+          <label for="lastname">Фамилия</label>
+          <input type="text" id="lastname" name="lastname" placeholder="Фамилия">
+        </div>
+
+        <div>
+          <label for="firstname">Имя</label>
+          <input type="text" id="firstname" name="firstname" placeholder="Имя">
+        </div>
+
+        <div>
+          <label for="secondname">Отчество</label>
+          <input type="text" id="secondname" name="secondname" placeholder="Отчество">
+        </div>
+
+        <div>
+          <label for="photo">Добавьте фотографию</label>
+          <input type="file" id="photo" name="photo">
+        </div>
+
+        <div>
+          <label for="email">Адрес электронной почты</label>
+          <input type="email" id="email" name="email" placeholder="email">
+        </div>
+
+        <div>
+          <label for="login">Логин</label>
+          <input type="text" id="login" name="login">
+        </div>
+
+        <div>
+          <label for="password">Пароль</label>
+          <input type="password" id="password" name="password" placeholder="Пароль">
+        </div>
+
+        <div>
+          <label for="site">Ваш сайт</label>
+          <input type="text" id="site" name="site" value="mysite.name">
+        </div>
+
+        <div>
+          <label for="male">я мужчина</label>
+          <input type="radio" id="male" name="gender">
+
+          <label for="female">я женщина</label>
+          <input type="radio" id="female" name="gender">
+        </div>
+
+        <div>
+          <label for="birthday">Дата рождения</label>
+          <input type="date" id="birthday" name="birthday">
+        </div>
+
+        <div>
+          <p>Выберите предпочитаемую кухню</p>
+          <div>
+            <label for="checkbox1">Украинская</label>
+            <input type="checkbox" id="checkbox1" name="ukrainian">
+
+            <label for="checkbox2">Японская</label>
+            <input type="checkbox" id="checkbox2" name="japanese">
+
+            <label for="checkbox3">Китайская</label>
+            <input type="checkbox" id="checkbox3" name="chinese">
+
+            <label for="checkbox4">Итальянская</label>
+            <input type="checkbox" id="checkbox4" name="italian">
+          </div>
+        </div>
+
+        <div>
+          <label for="aboutme">Расскажите о себе</label>
+          <textarea name="aboutme" id="aboutme" cols="30" rows="5" placeholder="Расскажите о себе"></textarea>
+        </div>
+
+        <!-- Рабочие кнопки -->
+        <div>
+          <button type="submit">Зарегистрироваться</button>
+          <button type="reset">Очистить</button>
+        </div>
+      </fieldset>
+    </form>
+  </div>
+
+  <!-- Подвал с копирайтом -->
+  <footer>
+    <p>&copy;Kozichev_Vladyslav</p>
+  </footer>
+</body>
+
+</html>
