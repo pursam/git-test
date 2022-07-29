@@ -102,6 +102,10 @@ strong {
   color: white;
 }
 /* Каталог */
+.catalog {
+  background-color: rgba(255, 255, 255, 0.255);
+  padding: 50px;
+}
 .category > li {
   list-style: none;
   font-family: "Rubik Moonrocks", cursive;
@@ -144,5 +148,80 @@ strong {
   font-size: 0.7em;
   margin: 0 0 0 5px;
 }
+/* контакты */
+.fldset {
+  max-width: 600px;
+}
+.intext {
+  display: block;
+  padding: 0.5em;
+  min-width: 50%;
+}
+.txtlbl {
+  line-height: 2.3rem;
+}
+.txtarea {
+  width: 100%;
+  resize: vertical;
+  max-height: 50vh;
+}
+.imphead {
+  color: yellow;
+}
+/* регистрация */
+.register {
+  background-color: rgba(0, 0, 0, 0.255);
+  margin: 0 auto 0 15%;
+  text-align: center;
+}
+.register > div > .intext {
+  margin: 0 auto;
+}
+/* навигация */
+.item {
+  list-style: none;
+  line-height: 2rem;
+  position: relative;
+}
+.item::before {
+  content: "";
+  background-image: url(../image/catalog2.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 4px;
+  left: -20px;
+}
+/* галлерея */
+.gallery {
+  background-image: url(../image/catalog2.png);
+  background-size: 2vw;
+}
+.gallery-item {
+  display: block;
+  padding: 5px;
+}
+.gallery-link {
+  display: inherit;
+  border: 3px solid black;
+  margin: 10px auto;
+  padding: 5px;
+  color: inherit;
+  text-align: center;
+  text-decoration: none;
+  width: 75vh;
+}
+.gallery-link:hover {
+  border: 3px solid rgba(0, 0, 0, 0);
+}
+.gallery-image {
+  padding: 1em;
+  display: inherit;
+  width: 100%;
+  margin: 0 auto;
+}
+
 /*font-family: 'Rubik Moonrocks', cursive; */
 /* font-family: 'Exo 2', sans-serif; */

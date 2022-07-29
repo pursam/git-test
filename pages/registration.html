@@ -14,90 +14,91 @@
     rel="stylesheet">
 </head>
 
-<body class="page">
-  <!-- Общее название сайта которое преследует каждую страницу -->
-  <h1>Homework.skillup</h1>
+<body>
+  <div class="back"></div>
+  <div class="container">
+    <!-- Общее название сайта которое преследует каждую страницу -->
+    <h1 class="mainheader">Homework.skillup</h1>
 
-  <!-- Название страницы где находится юзер + меню навигации по сайту -->
-  <h2 class="secondheader">Регистрация</h2>
+    <!-- Название страницы где находится юзер + меню навигации по сайту -->
+    <h2 class="secondheader">Регистрация</h2>
 
-  <div class="menu">
-    <ul class="menu-list">
-      <li class="menu-item">
-        <a class="link" href="../index.html">Главная</a>
-      </li>
-      <li class="menu-item">
-        <a class="link" href="articles.html">Статьи</a>
-      </li>
-      <li class="menu-item">
-        <a class="link" href="catalog.html">Каталог</a>
-      </li>
-      <li class="menu-item">
-        <a class="link" href="contacts.html">Контакты</a>
-      </li>
-      <li class="menu-item">
-        <a class="link" href="gallery.html">Галлерея</a>
-      </li>
-      <li class="menu-item">
-        <a class="link" href="page-nav.html">Навигация</a>
-      </li>
-      <li class="menu-item">
-        <a class="link" href="registration.html">Регистрация</a>
-      </li>
-    </ul>
-  </div>
+    <div class="menu">
+      <ul class="menu-list">
+        <li class="menu-item">
+          <a class="link" href="../index.html">Главная</a>
+        </li>
+        <li class="menu-item">
+          <a class="link" href="articles.html">Статьи</a>
+        </li>
+        <li class="menu-item">
+          <a class="link" href="catalog.html">Каталог</a>
+        </li>
+        <li class="menu-item">
+          <a class="link" href="contacts.html">Контакты</a>
+        </li>
+        <li class="menu-item">
+          <a class="link" href="gallery.html">Галлерея</a>
+        </li>
+        <li class="menu-item">
+          <a class="link" href="page-nav.html">Навигация</a>
+        </li>
+        <li class="menu-item">
+          <a class="link" href="registration.html">Регистрация</a>
+        </li>
+      </ul>
+    </div>
 
-  <!-- Основная часть со всеми полями ввода -->
-  <div>
+    <!-- Основная часть со всеми полями ввода -->
     <form action="register.php">
-      <fieldset>
+      <fieldset class="fldset register">
         <legend>Форма регистрации</legend>
 
         <div>
-          <label for="lastname">Фамилия</label>
-          <input type="text" id="lastname" name="lastname" placeholder="Фамилия">
+          <label class="txtlbl" for="lastname">Фамилия</label>
+          <input class="intext" type="text" id="lastname" name="lastname" placeholder="Фамилия">
         </div>
 
         <div>
-          <label for="firstname">Имя</label>
-          <input type="text" id="firstname" name="firstname" placeholder="Имя">
+          <label class="txtlbl" for="firstname">Имя</label>
+          <input class="intext" type="text" id="firstname" name="firstname" placeholder="Имя">
         </div>
 
         <div>
-          <label for="secondname">Отчество</label>
-          <input type="text" id="secondname" name="secondname" placeholder="Отчество">
+          <label class="txtlbl" for="secondname">Отчество</label>
+          <input class="intext" type="text" id="secondname" name="secondname" placeholder="Отчество">
         </div>
 
         <div>
-          <label for="photo">Добавьте фотографию</label>
+          <label class="txtlbl" for="photo">Добавьте фотографию</label>
           <input type="file" id="photo" name="photo">
         </div>
 
         <div>
-          <label for="email">Адрес электронной почты</label>
-          <input type="email" id="email" name="email" placeholder="email">
+          <label class="txtlbl" for="email">Адрес электронной почты</label>
+          <input class="intext" type="email" id="email" name="email" placeholder="email">
         </div>
 
         <div>
-          <label for="login">Логин</label>
-          <input type="text" id="login" name="login">
+          <label class="txtlbl" for="login">Логин</label>
+          <input class="intext" type="text" id="login" name="login">
         </div>
 
         <div>
-          <label for="password">Пароль</label>
-          <input type="password" id="password" name="password" placeholder="Пароль">
+          <label class="txtlbl" for="password">Пароль</label>
+          <input class="intext" type="password" id="password" name="password" placeholder="Пароль">
         </div>
 
         <div>
-          <label for="site">Ваш сайт</label>
-          <input type="text" id="site" name="site" value="mysite.name">
+          <label class="txtlbl" for="site">Ваш сайт</label>
+          <input class="intext" type="text" id="site" name="site" value="mysite.name">
         </div>
 
         <div>
-          <label for="male">я мужчина</label>
+          <label class="txtlbl" for="male">я мужчина</label>
           <input type="radio" id="male" name="gender">
 
-          <label for="female">я женщина</label>
+          <label class="txtlbl" for="female">я женщина</label>
           <input type="radio" id="female" name="gender">
         </div>
 
@@ -124,8 +125,9 @@
         </div>
 
         <div>
-          <label for="aboutme">Расскажите о себе</label>
-          <textarea name="aboutme" id="aboutme" cols="30" rows="5" placeholder="Расскажите о себе"></textarea>
+          <label class="txtlbl" for="aboutme">Расскажите о себе</label>
+          <textarea class="txtarea" name="aboutme" id="aboutme" cols="30" rows="5" placeholder="Расскажите о себе">
+          </textarea>
         </div>
 
         <!-- Рабочие кнопки -->
@@ -135,12 +137,12 @@
         </div>
       </fieldset>
     </form>
-  </div>
 
-  <!-- Подвал с копирайтом -->
-  <footer>
-    <p>&copy;Kozichev_Vladyslav</p>
-  </footer>
+    <!-- Подвал с копирайтом -->
+    <footer>
+      <p>&copy;Kozichev_Vladyslav</p>
+    </footer>
+  </div>
 </body>
 
 </html>
