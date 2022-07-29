@@ -21,6 +21,7 @@ body {
   margin: 0 auto;
   padding: 20px;
   max-width: 1280px;
+  min-height: 100vh;
   color: lavender;
   font-size: 20px;
   z-index: 0;
@@ -89,7 +90,7 @@ body {
   color: yellow;
   font-family: "Rubik Moonrocks", cursive;
   font-size: 2.5em;
-  margin: 3px;
+  margin: 0.5rem 0.2rem 0.2rem 0;
   float: left;
 }
 .comments-block {
@@ -171,7 +172,7 @@ strong {
 /* регистрация */
 .register {
   background-color: rgba(0, 0, 0, 0.255);
-  margin: 0 auto 0 15%;
+  margin: 0 auto;
   text-align: center;
 }
 .register > div > .intext {
@@ -221,6 +222,24 @@ strong {
   display: inherit;
   width: 100%;
   margin: 0 auto;
+}
+/* главная */
+.ind-content {
+  background-color: rgba(0, 0, 0, 0.255);
+  padding: 10px 0;
+  position: relative;
+  min-height: 65vh;
+  font-size: 2.2vh;
+  /* max-width: 80%; */
+}
+.ind-img {
+  max-width: 250px;
+  float: left;
+  margin: 0 10px;
+}
+footer {
+  position: static;
+  bottom: 0;
 }
 
 /*font-family: 'Rubik Moonrocks', cursive; */
