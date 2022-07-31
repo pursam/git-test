@@ -51,7 +51,7 @@
 
     <!-- Основная часть со всеми полями ввода -->
     <form action="register.php">
-      <fieldset class="fldset register">
+      <fieldset class="fldset">
         <legend>Форма регистрации</legend>
 
         <div>
@@ -71,7 +71,7 @@
 
         <div>
           <label class="txtlbl" for="photo">Добавьте фотографию</label>
-          <input type="file" id="photo" name="photo">
+          <input class="addfile" type="file" id="photo" name="photo">
         </div>
 
         <div>
@@ -95,11 +95,11 @@
         </div>
 
         <div>
-          <label class="txtlbl" for="male">я мужчина</label>
           <input type="radio" id="male" name="gender">
+          <label class="txtlbl" for="male">я мужчина</label>
 
-          <label class="txtlbl" for="female">я женщина</label>
           <input type="radio" id="female" name="gender">
+          <label class="txtlbl" for="female">я женщина</label>
         </div>
 
         <div>
@@ -107,20 +107,26 @@
           <input type="date" id="birthday" name="birthday">
         </div>
 
-        <div>
-          <p>Выберите предпочитаемую кухню</p>
+        <p>Выберите предпочитаемую кухню</p>
+        <div class="chboxes">
           <div>
+            <input class="chbox" type="checkbox" id="checkbox1" name="ukrainian">
             <label for="checkbox1">Украинская</label>
-            <input type="checkbox" id="checkbox1" name="ukrainian">
+          </div>
 
+          <div>
+            <input class="chbox" type="checkbox" id="checkbox2" name="japanese">
             <label for="checkbox2">Японская</label>
-            <input type="checkbox" id="checkbox2" name="japanese">
+          </div>
 
+          <div>
+            <input class="chbox" type="checkbox" id="checkbox3" name="chinese">
             <label for="checkbox3">Китайская</label>
-            <input type="checkbox" id="checkbox3" name="chinese">
+          </div>
 
+          <div>
+            <input class="chbox" type="checkbox" id="checkbox4" name="italian">
             <label for="checkbox4">Итальянская</label>
-            <input type="checkbox" id="checkbox4" name="italian">
           </div>
         </div>
 
@@ -132,8 +138,8 @@
 
         <!-- Рабочие кнопки -->
         <div>
-          <button type="submit">Зарегистрироваться</button>
-          <button type="reset">Очистить</button>
+          <button class="btn" type="submit">Зарегистрироваться</button>
+          <button class="btn" type="reset">Очистить</button>
         </div>
       </fieldset>
     </form>

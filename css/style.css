@@ -37,6 +37,7 @@ body {
   color: goldenrod;
 }
 .menu-list {
+  padding-left: 0px;
   display: flex;
   gap: 2px;
   list-style: none;
@@ -46,6 +47,7 @@ body {
   margin: 2px;
   color: peru;
   background-color: gold;
+  border-radius: 4px;
   border: 3px solid black;
   text-decoration: none;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -62,7 +64,9 @@ body {
   border-bottom: 3px dotted black;
 }
 .description {
-  background-color: orange;
+  padding: 0.5em;
+  background-color: rgba(0, 0, 0, 0.255);
+  border: 2px solid black;
   color: black;
 }
 .link-art {
@@ -147,36 +151,35 @@ strong {
   content: "new";
   background-color: orange;
   font-size: 0.7em;
-  margin: 0 0 0 5px;
+  padding: 0.2rem;
+  margin: 0.2em;
 }
 /* контакты */
+.head {
+  color: yellow;
+}
+/* регистрация */
 .fldset {
   max-width: 600px;
+  background-color: rgba(0, 0, 0, 0.255);
 }
-.intext {
+.intext,
+.btn {
+  padding: 1em;
   display: block;
-  padding: 0.5em;
-  min-width: 50%;
+  width: 100%;
+  margin-top: 1em;
 }
 .txtlbl {
   line-height: 2.3rem;
+}
+.addfile {
+  display: block;
 }
 .txtarea {
   width: 100%;
   resize: vertical;
   max-height: 50vh;
-}
-.imphead {
-  color: yellow;
-}
-/* регистрация */
-.register {
-  background-color: rgba(0, 0, 0, 0.255);
-  margin: 0 auto;
-  text-align: center;
-}
-.register > div > .intext {
-  margin: 0 auto;
 }
 /* навигация */
 .item {
