@@ -159,25 +159,21 @@ strong {
   color: yellow;
 }
 /* регистрация */
+.intext,
+.btn,
+.addfile,
+.txtarea,
 .fldset {
   max-width: 600px;
-  background-color: rgba(0, 0, 0, 0.255);
-}
-.intext,
-.btn {
   padding: 1em;
   display: block;
   width: 100%;
   margin-top: 1em;
 }
-.txtlbl {
-  line-height: 2.3rem;
-}
-.addfile {
-  display: block;
+.fldset {
+  background-color: rgba(0, 0, 0, 0.255);
 }
 .txtarea {
-  width: 100%;
   resize: vertical;
   max-height: 50vh;
 }
